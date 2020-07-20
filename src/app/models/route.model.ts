@@ -1,4 +1,4 @@
-export class DestinoViaje {
+export class Route {
     nombre:string;
     imagenUrl:string;
 

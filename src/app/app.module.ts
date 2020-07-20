@@ -2,14 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { DestinoViajeComponent } from './destino-viaje/destino-viaje.component';
-import { ListaDestinosComponent } from './lista-destinos/lista-destinos.component';
+import { RouteComponent } from './route/route.component';
+import { ListRoutesComponent } from './list-routes/list-routes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DestinoViajeComponent,
-    ListaDestinosComponent
+    RouteComponent,
+    ListRoutesComponent
   ],
   imports: [
     BrowserModule
