@@ -10,7 +10,7 @@ export class RouteComponent implements OnInit {
   @Input() destino: Route;
   @HostBinding('attr.class') cssClass = 'col-md-4';
   constructor() {}
-
+  
   ngOnInit(): void {
   }
 

@@ -10,21 +10,25 @@
                 <div class="card-body">
                     <form>
                         <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingresar nombre..." #nombre>
+                            <label for="RouteName">RouteName</label>
+                            <input type="text" class="form-control" id="RouteName" placeholder="Ingresar RouteName..." #RouteName>
                         </div>
                         <div class="form-group">
-                            <label for="Imagen	Url">Imagen Url</label>
+                            <label for="Imagen	Url">Link Imagen Ruta</label>
                             <input type="text" class="form-control" id="imagenUrl" placeholder="Ingresar url..." #url>
                         </div>
-                        <button type="submit" class="btn	btn-primary" (click)="guardar(nombre.value,url.value)" >Guardar!</button>
+                        <div class="form-group">
+                            <label for="descriptionRoute">Route Description</label>
+                            <input type="text" class="form-control" id="descriptionRoute" placeholder="Describe la ruta realizada" #descriptionRoute>
+                        </div>
+                        <button type="submit" class="btn btn-primary" (click)="guardar(RouteName.value,url.value,descriptionRoute.value)" >Guardar!</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <hr class="mb-5">
-    <div class="row ">
+    <ul class="row ">
         <app-route *ngFor="let d of destinos;" [destino]="d"></app-route>
-    </div>
+    </ul>
 </div>

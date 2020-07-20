@@ -1,17 +1,15 @@
-<div class="">
+<li>
     <div class="card-content">
         <div class="card-img">
-            <img src="https://placeimg.com/380/230/nature" alt="">
+            <img src="https://placeimg.com/380/230/nature" alt="" [src]="destino.imagenUrl">
             <span>
-                <h4>{{destino.nombre}}</h4>
+                <h4>{{destino.RouteName}}</h4>
             </span>
         </div>
         <div class="card-desc">
-            <h3>{{destino.nombre}}</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor
-                quo, perspiciatis
-                voluptas totam</p>
+            <h3>{{destino.RouteName}}</h3>
+            <p>{{destino.descriptionRoute}}</p>
             <a href="#" class="btn-card">Read</a>
         </div>
     </div>
-</div>
+</li>

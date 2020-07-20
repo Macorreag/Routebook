@@ -17,8 +17,8 @@ export class ListRoutesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  guardar(nombre:string,url:string):boolean{
-    this.destinos.push(new Route(nombre,url));
+  guardar(RouteName:string,url:string,descriptionRoute:string):boolean{
+    this.destinos.push(new Route(RouteName,url,descriptionRoute));
     console.log(this.destinos);    
     return false;
   }
